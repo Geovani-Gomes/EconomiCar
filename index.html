@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EconomiCar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="image-overlay"></div>
+        <img src="img/GolPreto.png" alt="Cabeçalho" class="header-image">
+        <div class="overlay">
+            <img src="img/logoeconomicar52.png" alt="Logo EconomiCar" class="logo">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about-us">Sobre Nós</a></li>
+                    <li><a href="#car-list">Veículos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            
+        </section>
+        <section id="about-us">
+            <h1 class="about-title">Sobre Nós</h1>
+            <h3 class="about-subtitle">Localizado na Vila Olímpia, em São Paulo, a EconomiCar é uma ótima opção para quem busca o primeiro carro gastando pouco. Confira algum dos nossos modelos abaixo:</h3>
+            
+        </section>
+        <section id="car-list">
+            <h1>Veículos disponíveis</h1>
+            <div class="car-options">
+                <div class="car-option">
+                    <img src="img/GolAmarelo.png" alt="Carro 1" class="car-image car1-image">
+                    <div class="car-buttons car-button-1">
+                        <button class="details-button" onclick="showDetails('gol')">Ver detalhes</button>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+                
+                <div class="car-option">
+                    <img src="img/fiatpalio2011.png" alt="Carro 2" class="car-image car2-image">
+                    <div class="car-buttons car-button-2">
+                        <button class="details-button" onclick="showDetails('palio')">Ver detalhes</button>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+                
+                <div class="car-option">
+                    <img src="img/corsaclassic.png" alt="Carro 3" class="car-image car3-image">
+                    <div class="car-buttons car-button-3">
+                        <button class="details-button" onclick="showDetails('corsa')">Ver detalhes</button>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+                
+                <div class="car-option">
+                    <img src="img/fiatuno1.0.png" alt="Carro 4" class="car-image car4-image">
+                    <div class="car-buttons car-button-4">
+                        <button class="details-button" onclick="showDetails('uno')">Ver detalhes</button>
+                        <button class="buy-button">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <!-- Conteúdo da seção "Contato" -->
+        </section>
+        
+        <section id="car-details" style="display:none;">
+            <div id="gol-details" class="car-details-content">
+                <h1>Gol Bolinha (G2) 1997</h1>
+                <img src="img/GolAmarelo.png" alt="Gol Bolinha">
+                <div class="car-detail">
+                    <h2>Dados técnicos:</h2>
+                    <p>Motor 1.0 8V, câmbio manual, combustível a base de gasolina, 80.000 km, cor amarelo, 4 portas</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Estado de conservação:</h2>
+                    <p>Pintura original em excelente estado, interior impecável, mecânica revisada recentemente, documentação em dia</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Acessórios:</h2>
+                    <p>Ar-condicionado, direção mecânica, rodas de liga leve</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Histórico:</h2>
+                    <p>Único dono, todas as revisões realizadas em concessionária</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Pontos fortes:</h2>
+                    <p>Baixo consumo de combustível, motor extremamente confiável, design clássico e atemporal</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Observações:</h2>
+                    <p>Pequeno arranhão na porta do motorista (quase imperceptível), pneus dianteiros com meia vida</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Valor: R$ 10.300,00</h2>
+                    <p>*3 meses de garantia</p>
+                </div>
+                <button class="back-button" onclick="showCarList()">Voltar</button>
+            </div>
+
+            <div id="palio-details" class="car-details-content" style="display:none;">
+                <h1>Fiat Pálio 2011</h1>
+                <img src="img/fiatpalio2011.png" alt="Fiat Pálio">
+                <div class="car-detail">
+                    <h2>Dados técnicos:</h2>
+                    <p>Motor 1.0, câmbio manual, 90.000 km, cor preto, 4 portas</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Estado de conservação:</h2>
+                    <p>Bom estado geral, pintura sem riscos, mecânica revisada recentemente</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Acessórios:</h2>
+                    <p>Ar-condicionado, direção hidráulica, vidros elétricos</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Histórico:</h2>
+                    <p>Dois donos, todas as revisões em dia</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Pontos fortes:</h2>
+                    <p>Baixo custo de manutenção, economia de combustível</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Observações:</h2>
+                    <p>Pneus em bom estado, pronto para uso</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Valor: R$ 10.800,00</h2>
+                    <p>*3 meses de garantia</p>
+                </div>
+                <button class="back-button" onclick="showCarList()">Voltar</button>
+            </div>
+
+            <div id="corsa-details" class="car-details-content" style="display:none;">
+                <h1>Corsa Classic 2008</h1>
+                <img src="img/corsaclassic.png" alt="Corsa Classic">
+                <div class="car-detail">
+                    <h2>Dados técnicos:</h2>
+                    <p>Motor 1.0, câmbio manual, 70.000 km, cor prata, 4 portas</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Estado de conservação:</h2>
+                    <p>Excelente estado, pintura e interior muito bem cuidados</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Acessórios:</h2>
+                    <p>Direção hidráulica, ar-condicionado</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Histórico:</h2>
+                    <p>Um único dono, todas as revisões feitas</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Pontos fortes:</h2>
+                    <p>Baixo consumo de combustível, muito espaçoso para a categoria</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Observações:</h2>
+                    <p>Documentação em dia, pronto para transferência</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Valor: R$ 10.500,00</h2>
+                    <p>*3 meses de garantia</p>
+                </div>
+                <button class="back-button" onclick="showCarList()">Voltar</button>
+            </div>
+
+            <div id="uno-details" class="car-details-content" style="display:none;">
+                <h1>Fiat Uno 1.0 2010</h1>
+                <img src="img/fiatuno1.0.png" alt="Fiat Uno">
+                <div class="car-detail">
+                    <h2>Dados técnicos:</h2>
+                    <p>Motor 1.0, câmbio manual, 80.000 km, cor branca, 4 portas</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Estado de conservação:</h2>
+                    <p>Bom estado geral, manutenção em dia</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Acessórios:</h2>
+                    <p>Ar-condicionado, direção hidráulica</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Histórico:</h2>
+                    <p>Um dono, todas as revisões realizadas</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Pontos fortes:</h2>
+                    <p>Ótima economia de combustível, baixo custo de manutenção</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Observações:</h2>
+                    <p>Pequenos detalhes de uso, mas bem conservado</p>
+                </div>
+                <div class="car-detail">
+                    <h2>Valor: R$ 10.600,00</h2>
+                    <p>*3 meses de garantia</p>
+                </div>
+                <button class="back-button" onclick="showCarList()">Voltar</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer-background">
+        <h2>Entre em contato conosco e nos siga nas redes sociais</h2>
+        <div class="social-logos">
+            <img src="img/whatsapppretoebranco.png" alt="WhatsApp" class="social-logo whatsapp-logo">
+            <img src="img/instagrampreto.png" alt="Instagram" class="social-logo instagram-logo">
+            <img src="img/facebookpretoebranco.png" alt="Facebook" class="social-logo facebook-logo">
+            <img src="img/twitterpretoebranco.png" alt="Twitter" class="social-logo twitter-logo">
+        </div>
+        <p>© 2024 EconomiCar. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
